@@ -13,3 +13,56 @@
  *= require_tree .
  *= require_self
  */
+header {
+	width: 100%;
+	margin-top: 30px;
+}
+
+.conteiner {
+	width: 50%;
+	margin:  0 auto;
+}
+header a{
+	color: rgb(0, 0, 0);
+	padding: 20px;
+	text-decoration-line: none;
+}
+
+/* 投稿されたもの */
+.posts-index-item {
+	padding: 20px;
+	border: 1px solid rgb(219, 218, 218);
+    margin-bottom: 15px;
+}
+
+/* users編集 */
+.field {
+	padding:10px;
+}
+
+.conteiner h2 {
+	width: 70%;
+	background-color: rgb(245, 245, 245);
+	font-size: 20px;
+	margin-top: 80px;
+    padding: 10px;
+}
+#user_email {
+	padding: 10px;
+	width: 70%;
+}
+
+#user_password {
+	padding: 10px;
+	width: 70%;
+}
+
+#user_password_confirmation {
+	padding: 10px;
+	width: 70%;
+}
+
+#user_current_password {
+	padding: 10px;
+	width: 70%;
+}
