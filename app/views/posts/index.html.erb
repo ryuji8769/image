@@ -3,5 +3,13 @@
   <div class="posts-index-item">
     <%= post.content %>
   </div>
+  
+  <% if post.images.attached? %>
+  <div class="images">
+    <% post.images.each do |image| %>
+    <%= image_tag image %> <br>
+  <% end %>
+  </div>
+  <% end %>
 <% end %>
 <%= link_to("新規投稿", "/posts/new") %>
