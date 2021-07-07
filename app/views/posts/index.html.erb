@@ -7,9 +7,9 @@
   <% if post.images.attached? %>
   <div class="images">
     <% post.images.each do |image| %>
-    <%= image_tag image %> <br>
+    <%= image_tag post.image.variant(resize: '500x500') %>
   <% end %>
-  </div>
   <% end %>
 <% end %>
+  </div>
 <%= link_to("新規投稿", "/posts/new") %>

@@ -1,7 +1,7 @@
 <h1>新規投稿</h1>
 <%= form_tag("/posts/create") do %>
 
-<%= form_with model: @post, local: true do |form| %>
+<%= form_with model: @post, local: { multipart: true } do |form| %>
   <textarea name="content"></textarea>
   <%= form.file_field :images, multiple: true %><br>
   <input type="submit" value="投稿">
