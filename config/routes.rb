@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'pages#index'
+  get 'pages/show'
 
   get 'posts/index' => 'posts#index'
   get 'posts/new' => 'posts#new'
