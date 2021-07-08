@@ -1,9 +1,11 @@
-<h1>新規投稿</h1>
+<div class="conteiner">
+<h1>ツイートする</h1>
 <%= form_tag("/posts/create") do %>
 
-<%= form_with model: @post, local: { multipart: true } do |form| %>
-  <textarea name="content"></textarea>
+<%= form_with model: @post, local: true do |form| %>
+  <%= form.text_area :content %><br><br>
   <%= form.file_field :images, multiple: true %><br>
-  <input type="submit" value="投稿">
+  <%= form.submit class: "input", value: "ツイート"%>
 <% end %>
 <% end%>
+</div>
